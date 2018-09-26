@@ -3,6 +3,9 @@ imports:
 
 default:
     extensions:
+        FriendsOfBehat\SymfonyExtension:
+            env_file: ~
+
         FriendsOfBehat\ContextServiceExtension:
             imports:
                 - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
@@ -17,6 +20,9 @@ default:
 
 cached:
     extensions:
+        FriendsOfBehat\SymfonyExtension:
+            env_file: ~
+
         FriendsOfBehat\ContextServiceExtension:
             imports:
                 - "vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml"
